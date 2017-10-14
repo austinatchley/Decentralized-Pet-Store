@@ -1,31 +1,18 @@
 {
-  "name": "skeleton",
-  "version": "0.1.5",
-  "description": "Skeleton dapp",
-  "main": "webpack.config.js",
-  "dependencies": {
-  },
-  "devDependencies": {
+  "name": "pet-shop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "start": "webpack-dev-server --content-base build"
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ethcore/skeleton.git"
-  },
-  "keywords": [
-    "Dapp",
-    "Parity",
-    "Reactive",
-    "Template"
-  ],
-  "author": "Parity Technologies Ltd",
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/ethcore/skeleton/issues"
-  },
-  "homepage": "https://github.com/ethcore/skeleton#readme"
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  }
 }
