@@ -36,9 +36,14 @@ App = {
   },
 
   initContract: function() {
-    /*
-     * Replace me...
-     */
+    $.getJSON('Adoption.json', function(data) {
+      var AdoptionArtifact = data;
+      App.contracts.Adoption = TruffleContract(AdoptionArtifact);
+
+      App.contracts.Adoption.setProvider(App.web3Provider);
+
+      return App.markAdopted();
+    });
 
     return App.bindEvents();
   },
